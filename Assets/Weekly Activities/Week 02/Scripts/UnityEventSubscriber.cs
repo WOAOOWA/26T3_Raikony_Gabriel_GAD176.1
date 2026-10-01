@@ -1,5 +1,9 @@
 using UnityEngine;
 
+public class Animail
+{
+    public bool Bark = true;
+}
 public class UnityEventSubscriber : MonoBehaviour
 {
     private void OnEnable()
