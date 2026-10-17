@@ -1,4 +1,0 @@
-repository "26T3_Raikony_Gabriel_GAD176.1/26T3_Raikony_Gabriel_GAD176.1@16768347627743@cloud"
-  path "/"
-    br "/main"
-    co "/main"
