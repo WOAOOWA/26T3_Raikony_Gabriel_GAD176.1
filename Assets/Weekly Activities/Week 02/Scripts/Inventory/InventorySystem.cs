@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 
 public class InventorySystem : MonoBehaviour
 {
-
-    [SerializeField] public GameObject bgInv;
     public bool onInventory;
 
     private bool OnInventory;
@@ -63,6 +61,7 @@ public class DragDrop : InventorySystem, IPointerDownHandler//Make the mouse(poi
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
 
+ 
     private void Awake() //awake is even faster than start, as it begin first
     {
         rectTransform = GetComponent<RectTransform>();

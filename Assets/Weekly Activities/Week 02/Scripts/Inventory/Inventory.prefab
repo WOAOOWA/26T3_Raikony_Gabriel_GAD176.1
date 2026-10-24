@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db68cfd3d3a2472478e07bf473465455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgInv: {fileID: 6570356721995021467, guid: 32e920682e0aa77429315fa1408ea724, type: 3}
   onInventory: 0
 --- !u!1 &1622162267336801072
 GameObject:
@@ -314,5 +313,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db68cfd3d3a2472478e07bf473465455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bgInv: {fileID: 1622162267336801072}
   onInventory: 0

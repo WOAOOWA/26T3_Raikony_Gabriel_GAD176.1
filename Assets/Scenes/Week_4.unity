@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 762404915697824445, guid: cc84acc869c6cdc45a51d6a02b96d849, type: 3}
+      propertyPath: bgInv
+      value: 
+      objectReference: {fileID: 2124944965}
     - target: {fileID: 6420648729975740558, guid: cc84acc869c6cdc45a51d6a02b96d849, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -457,6 +461,7 @@ GameObject:
   - component: {fileID: 2049506199}
   - component: {fileID: 2049506198}
   - component: {fileID: 2049506197}
+  - component: {fileID: 2049506201}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -582,6 +587,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2049506201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049506196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1 &2095330751
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +682,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2124944965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1622162267336801072, guid: cc84acc869c6cdc45a51d6a02b96d849, type: 3}
+  m_PrefabInstance: {fileID: 559626804}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
