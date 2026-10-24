@@ -214,8 +214,8 @@ GameObject:
   - component: {fileID: 6678293515036380411}
   - component: {fileID: 5741210574816436560}
   - component: {fileID: 5773857495367629862}
-  - component: {fileID: 3106847077955462182}
   - component: {fileID: 3670023307232050359}
+  - component: {fileID: 7139718576563466715}
   m_Layer: 5
   m_Name: Tomfollery
   m_TagString: Untagged
@@ -277,21 +277,6 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &3106847077955462182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5689049750732654877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab355da0bcbf70144b766e76ec52f7dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bgInv: {fileID: 0}
-  onInventory: 0
-  canvas: {fileID: 5788317317286310711}
 --- !u!225 &3670023307232050359
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -304,3 +289,17 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7139718576563466715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5689049750732654877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db68cfd3d3a2472478e07bf473465455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgInv: {fileID: 0}
+  onInventory: 0
