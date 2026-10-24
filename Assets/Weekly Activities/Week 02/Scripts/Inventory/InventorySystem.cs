@@ -67,6 +67,12 @@ public class DragDrop : InventorySystem, IPointerDownHandler//Make the mouse(poi
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log("Pressed");
+    }
+
     public void OnBeginDrag(PointerEventData eventdata)
     {
         Debug.Log("Start Drag");
@@ -85,10 +91,7 @@ public class DragDrop : InventorySystem, IPointerDownHandler//Make the mouse(poi
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
     }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("Pressed");
-    }
+
     public void OnDrop(PointerEventData eventData)
     { 
         throw new System.NotImplementedException();
