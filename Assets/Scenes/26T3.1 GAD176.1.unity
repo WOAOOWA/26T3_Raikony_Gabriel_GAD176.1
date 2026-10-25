@@ -405,6 +405,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b743c6011cb03e4280e7e80e022d23c, type: 3}
+--- !u!1 &199516940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1311053533943112533, guid: 5bce1138807cc23489cb34b2548e8dc0, type: 3}
+  m_PrefabInstance: {fileID: 115594808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &306418704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1021,7 +1026,7 @@ PrefabInstance:
     - target: {fileID: 2154781789264300086, guid: 530a12bb1b8905a4b827f25ace6e73a1, type: 3}
       propertyPath: inventoryUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 199516940}
     - target: {fileID: 4261983554824039054, guid: 530a12bb1b8905a4b827f25ace6e73a1, type: 3}
       propertyPath: m_Name
       value: InventorySpawner
