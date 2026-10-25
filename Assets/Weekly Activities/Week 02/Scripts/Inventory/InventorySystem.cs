@@ -1,19 +1,25 @@
+using System.ComponentModel;
+using System.Security.Cryptography;
 using JetBrains.Annotations;
 using Microsoft.Win32.SafeHandles;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class InventorySystem : MonoBehaviour
 {
-    public bool onInventory;
+    public bool onInventory = false; //Toggle inventory UI
+    
 
-    [SerializeField] private bool cursorLock = false;
+    [SerializeField] private bool cursorLock = true; // Toggle mouse lock
     [SerializeField] private GameObject inventoryUI;
 
     private void Awake()
     {
-        onInventory = false;
+        inventoryUI.SetActive(false); // Hides inventory UI on start.
+        Cursor.visible = false; //Hides cursor mouse so it only shows on inventory UI.
+        Cursor.lockState = CursorLockMode.Locked; //Locks the mouse in the middle of the screen.
     }
 
 
@@ -21,7 +27,7 @@ public class InventorySystem : MonoBehaviour
     {
         MouseState();
         
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab)) // Pressing Tab toggles inventory.
         {
             if (!onInventory)
             {
@@ -37,17 +43,17 @@ public class InventorySystem : MonoBehaviour
         }
         void MouseState()
         {
-            if (Input.GetKeyDown(KeyCode.G))
+            if (Input.GetKeyDown(KeyCode.Tab))
             {
-                if (!cursorLock)
+                if (cursorLock)
                 {
-                    cursorLock = true;
-                    Cursor.visible = false; //Hides mouse cursor.
+                    cursorLock = false;
+                    Cursor.visible = false; //Shows cursor mouse cursor.
                     Cursor.lockState = CursorLockMode.Locked; //Locks the mouse in the middle of the screen.
                 }
                 else
                 {
-                    cursorLock = false;
+                    cursorLock = true;
                     Cursor.visible = true;
                     Cursor.lockState = CursorLockMode.None;
                 }
@@ -62,6 +68,10 @@ public class InventorySystem : MonoBehaviour
 
     }
 }
+
+
+
+
 
 
 public class InventorySpawner : InventorySystem
