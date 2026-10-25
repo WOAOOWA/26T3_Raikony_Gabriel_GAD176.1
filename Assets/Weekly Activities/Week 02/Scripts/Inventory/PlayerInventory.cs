@@ -6,7 +6,7 @@ public class PlayerInventory : MonoBehaviour
     [Header("General")]
     public List<itemType> inventoryList;
     public int selectedItem;
-    public float playerReach = 100;
+    public float playerReach = 10;
     [SerializeField] GameObject throwItem_gameobject;
 
     [Space(20)]
